@@ -10,3 +10,4 @@ faiss-cpu
 pydantic
 gunicorn
 fastapi[standard]
+bs4
