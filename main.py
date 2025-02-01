@@ -62,6 +62,6 @@ def ask_question(input: QueryInput):
 
 
 @app.get("/")
-async def ask_question():
+async def demo_api():
     return {'message':'api working '}
    
