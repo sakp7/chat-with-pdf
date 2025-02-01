@@ -58,6 +58,9 @@ def ask_question(input: QueryInput):
         | prompt
         | llm
     )
+        
+    answer = chain.invoke(input.question)  # Invoke the chain
+    return {"answer": answer} 
 
 
 
