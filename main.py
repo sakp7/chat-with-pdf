@@ -58,5 +58,10 @@ def ask_question(input: QueryInput):
         | prompt
         | llm
     )
-    answer = chain.invoke(input.question)
-    return {"answer": answer}
+
+
+
+@app.get("/")
+async def ask_question():
+    return {'message':'api working '}
+   
