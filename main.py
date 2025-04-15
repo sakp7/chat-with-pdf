@@ -14,7 +14,7 @@ app = FastAPI()
 embeddings = GoogleGenerativeAIEmbeddings(model='models/text-embedding-004',google_api_key=os.getenv('GEMINI_API_KEY'))
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=250)
 db = None
-llm = ChatGroq(api_key=os.getenv('GROQ_API_KEY')
+llm = ChatGroq(api_key=os.getenv('GROQ_API_KEY'))
 
 template = """
 <|system|>
