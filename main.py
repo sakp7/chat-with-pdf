@@ -9,6 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 import os
 from dotenv import load_dotenv
+os.environ['USER_AGENT'] = 'myagent'
 load_dotenv()
 app = FastAPI()
 embeddings = GoogleGenerativeAIEmbeddings(model='models/text-embedding-004',google_api_key=os.getenv('GEMINI_API_KEY'))
